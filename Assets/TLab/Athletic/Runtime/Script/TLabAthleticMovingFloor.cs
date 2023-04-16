@@ -25,7 +25,7 @@ public class TLabAthleticMovingFloor : MonoBehaviour
     private float m_remain;
     private float m_distance;
 
-    public void FloorVelocity(Vector3 position)
+    public Vector3 FloorVelocity(Vector3 position)
     {
         return m_rb.GetPointVelocity(position);
     }

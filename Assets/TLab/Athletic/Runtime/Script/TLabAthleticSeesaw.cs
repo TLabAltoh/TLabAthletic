@@ -11,7 +11,7 @@ public class TLabAthleticSeesaw : MonoBehaviour
     private Rigidbody m_rb;
     private float m_currentPitch;
 
-    public void Velocity(Vector3 position)
+    public Vector3 Velocity(Vector3 position)
     {
         return m_rb.GetPointVelocity(position);
     }
@@ -32,12 +32,12 @@ public class TLabAthleticSeesaw : MonoBehaviour
     {
         if (m_playerGrounded)
         {
-            Vector3 axis = Vector3.Cross(this.transform.right, (TLabThirdPersonController.Instance.transform.position - this.transform.position).normalized);
-            float power = Vector3.Dot(this.transform.up, axis);
+            //Vector3 axis = Vector3.Cross(this.transform.right, (TLabThirdPersonController.Instance.transform.position - this.transform.position).normalized);
+            //float power = Vector3.Dot(this.transform.up, axis);
 
-            m_currentPitch -= angularVelocityMultiplier * power * Time.deltaTime;
+            //m_currentPitch -= angularVelocityMultiplier * power * Time.deltaTime;
 
-            m_rb.MoveRotation(m_baseRotation * Quaternion.Euler(m_currentPitch, 0.0f, 0.0f));
+            //m_rb.MoveRotation(m_baseRotation * Quaternion.Euler(m_currentPitch, 0.0f, 0.0f));
         }
         else
         {
