@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-public class TLabAthleticSlider : MonoBehaviour
+public class TLabAthleticMovingFloor : MonoBehaviour
 {
     [Header("Speed to reach the next station [m/s]")]
     public float m_speed;
