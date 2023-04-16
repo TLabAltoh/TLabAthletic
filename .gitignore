@@ -1,9 +1,8 @@
-/Library
-/Logs
-/Packages
-/ProjectSettings
-/UserSettings
-/.vsconfig
-/TLab.Athletic.csproj
-/TLabAthletic.sln
-/Assets/Scenes
+Library
+Logs
+Packages
+ProjectSettings
+UserSettings
+.vsconfig
+TLab.Athletic.csproj
+TLabAthletic.sln
