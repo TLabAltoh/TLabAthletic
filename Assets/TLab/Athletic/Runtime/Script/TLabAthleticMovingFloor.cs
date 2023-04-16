@@ -25,12 +25,9 @@ public class TLabAthleticMovingFloor : MonoBehaviour
     private float m_remain;
     private float m_distance;
 
-    public Vector3 FloorVelocity
+    public void FloorVelocity(Vector3 position)
     {
-        get
-        {
-            return m_rb.GetPointVelocity(TLabThirdPersonController.Instance.transform.position);
-        }
+        return m_rb.GetPointVelocity(position);
     }
 
     private void SetNextStation()

@@ -11,12 +11,9 @@ public class TLabAthleticSeesaw : MonoBehaviour
     private Rigidbody m_rb;
     private float m_currentPitch;
 
-    public Vector3 Velocity
+    public void Velocity(Vector3 position)
     {
-        get
-        {
-            return m_rb.GetPointVelocity(TLabThirdPersonController.Instance.transform.position);
-        }
+        return m_rb.GetPointVelocity(position);
     }
 
     void Start()
