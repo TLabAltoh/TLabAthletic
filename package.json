@@ -1,0 +1,19 @@
+{
+    "name": "com.tlab.athletic",
+    "displayName": "TLabAthletic",
+    "version": "1.0.0",
+    "unity": "2021.3",
+    "description": "Make a game object continue in periodic motion.",
+    "keywords": [
+        "TLab",
+        "Athletic"
+    ],
+    "license": "MIT",
+    "category": "TLab",
+    "dependencies": {},
+    "author": {
+        "name": "TLabAltoh",
+        "email": "tlabaltoh@gmail.com",
+        "url": "https://tlab-games.com"
+    }
+}
