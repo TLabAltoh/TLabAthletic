@@ -1,5 +1,4 @@
 using UnityEngine;
-using StarterAssets;
 
 public class TLabAthleticSeesaw : MonoBehaviour
 {
@@ -16,7 +15,7 @@ public class TLabAthleticSeesaw : MonoBehaviour
     {
         get
         {
-            return m_rb.GetPointVelocity(ThirdPersonController.Instance.transform.position);
+            return m_rb.GetPointVelocity(TLabThirdPersonController.Instance.transform.position);
         }
     }
 
@@ -36,7 +35,7 @@ public class TLabAthleticSeesaw : MonoBehaviour
     {
         if (m_playerGrounded)
         {
-            Vector3 axis = Vector3.Cross(this.transform.right, (ThirdPersonController.Instance.transform.position - this.transform.position).normalized);
+            Vector3 axis = Vector3.Cross(this.transform.right, (TLabThirdPersonController.Instance.transform.position - this.transform.position).normalized);
             float power = Vector3.Dot(this.transform.up, axis);
 
             m_currentPitch -= angularVelocityMultiplier * power * Time.deltaTime;
