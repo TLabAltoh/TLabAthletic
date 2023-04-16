@@ -1,0 +1,9 @@
+# Assetsのみ追跡
+/Library
+/Logs
+/Packages
+/ProjectSettings
+/UserSettings
+/.vsconfig
+/TLab.Athletic.csproj
+/TLabAthletic.sln
